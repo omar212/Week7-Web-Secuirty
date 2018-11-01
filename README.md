@@ -52,7 +52,7 @@ Time spent: **6** hours spent in total
     - Fixed in version: 4.7.3
   - [x] GIF Walkthrough:
 
-     <img src='Challenge4 Video.gif' title='youtube video' alt='Youtube Video' />
+     <img src='Challenge 3 Video.gif' title='youtube video' alt='Youtube Video' />
 
   - [x] Steps to recreate: Create a new page and place the following code in the body:
 
