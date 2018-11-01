@@ -24,7 +24,7 @@ Time spent: **6** hours spent in total
     - Tested in version: 4.2
     - Fixed in version: N/A
   - [x] GIF Walkthrough: 
-     - <img src='Challenge2 Video.gif' title='XSS' width='' alt='' />   
+     - <img src='Challenge 2 Video.gif' title='XSS' width='' alt='' />   
   - [x] Steps to recreate: 
       Go to create a new media, upload a picture from your laptop. Then copy & paste the following code
         ```
