@@ -13,7 +13,7 @@ Time spent: **6** hours spent in total
     - Tested in version: 4.2
     - Fixed in version: N/A
   - [x] GIF Walkthrough: 
-     - <img src='Challenge 2 Video.gif' title='XSS' width='' alt='' />
+     - <img src='Challenge 1 Video.gif' title='XSS' width='' alt='' />
   - [x] Steps to recreate: 
       - Create a new post called example, and then put the code```<a onmouseover= "alert('Gotta catch them all !')" >Click Me</a>``` in           the content link. Finally click link to show message in the preview of post. 
   - [x] Affected source code:
@@ -38,12 +38,30 @@ Time spent: **6** hours spent in total
     - Tested in version: 4.2
     - Fixed in version: N/A
   - [x] GIF Walkthrough: 
-    - <img src='Challenge4 Video.gif' title='XSS' width='' alt='' />  
+    - <img src='Challenge 4 Video.gif' title='XSS' width='' alt='' />  
   - [x] Steps to recreate: 
        Go to the WordPress login page, first, check the input for admin with empty password,
        then it shows the error because the password is empty.Second, when you input admin as    username, and put password randomly.It            shows the password for admin is incorrect. When you put other name (ex.user), and random password, it shows error. 
+  
   - [x] Affected source code:
     - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
+  4. 3. (Optional)Authenticated Stored Cross-Site Scripting (XSS) in YouTube URL Embeds
+  - [x] Summary: This vulnerablity allows remote attackers to inject arbitrary web script or HTML via video URL in YouTube emebeds.
+    - Vulnerability types: XSS
+    - Tested in version: 4.2
+    - Fixed in version: 4.7.3
+  - [x] GIF Walkthrough:
+
+     <img src='Challenge 4 Video.gif' title='youtube video' alt='Youtube Video' />
+
+  - [x] Steps to recreate: Create a new page and place the following code in the body:
+
+    ```
+    [embed src='https://youtube.com/embed/5678\x3csvg onload=alert(1)\x3e'][/embed]
+    ```
+
+    When the page is viewed, the injected code is executed.
+
 
 ## Assets
 
